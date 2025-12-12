@@ -47,6 +47,10 @@ The heuristic planner's behavior can be verified by modifying the `DFT_SIZE` con
 *   **Rader:** Set $N$ to a prime number (e.g., 2053).
 *   **Bluestein:** Set $N$ to a composite with large prime factors (e.g., 2000).
 
+## Audio Input Configuration
+
+The audio input device is pre-selected in the source code. The application is programmed to automatically attach to the operating system's default recording device. To specify a different hardware interface, the device selection logic within src/audio/mod.rs must be modified directly.
+
 ## References
 
 **[1]** Joel Yliluoma. *Nopea Fourier-muunnos – teoria ja toteutus modernilla C++:lla*. Master's thesis, University of Helsinki, Department of Mathematics and Statistics, 2024.
