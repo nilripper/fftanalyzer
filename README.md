@@ -51,6 +51,8 @@ The heuristic planner's behavior can be verified by modifying the `DFT_SIZE` con
 
 The audio input device is pre-selected in the source code. The application is programmed to automatically attach to the operating system's default recording device. To specify a different hardware interface, the device selection logic within src/audio/mod.rs must be modified directly.
 
+It is recommended to use headset microphones or dedicated microphones for better signal capture performance.
+
 ## References
 
 **[1]** Joel Yliluoma. *Nopea Fourier-muunnos – teoria ja toteutus modernilla C++:lla*. Master's thesis, University of Helsinki, Department of Mathematics and Statistics, 2024.
